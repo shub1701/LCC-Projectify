@@ -8,16 +8,16 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     border-bottom: 2px solid black;
     max-height: 90px;
     background-color: white;
     top: 0;
 }
 
-.navbar{
+.navbar {
     display: flex;
     width: 50%;
     justify-content: space-evenly;
@@ -25,13 +25,61 @@ header {
 }
 
 .navbar a:hover{
-    font-size: 24px;
-    font-weight: 600;
+    transform: translateY(-6px);
+    transition-duration: 300ms;
+}
+
+.dropdown{
+    overflow: hidden;
+    float: left;
+}
+
+.dropdown .dropbtn{
+    font-size: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px 10px;
+    border: 1px transparent;
+    border-radius: 5%;
+}
+
+.dropdown-content a{
+    float : none;
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+    padding: 10px 10px;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 
 main {
     height: fit-content;
     margin: 10px;
+    overflow: hidden;
 }
 
 .best-sellers {
@@ -40,7 +88,7 @@ main {
     /* margin: 10px; */
     width: 100%;
     height: 500px;
-    padding: 20px 0px;  
+    padding: 20px 0px;
 }
 
 .info {
@@ -54,10 +102,10 @@ main {
 }
 
 
-.heading{
+.heading {
     text-align: center;
     font-size: xx-large;
-    font-family:'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
     font-weight: 800;
 }
 
@@ -109,7 +157,7 @@ footer {
     align-items: center;
 }
 
-.up{
+.up {
     border: 2px solid black;
     border-radius: 50%;
     width: 30px;
@@ -130,7 +178,7 @@ footer {
 
 }
 
-.social-media-links a{
+.social-media-links a {
     padding: 10px;
     margin: 10px;
 }
@@ -174,7 +222,8 @@ footer {
     margin: 15px 15px;
     font-weight: 700;
     font-size: 1.8rem;
-    font-family:'Dancing Script', cursive;;
+    font-family: 'Dancing Script', cursive;
+    ;
 }
 
 .prevNext span {
@@ -195,13 +244,13 @@ footer {
     margin-right: 20px;
 }
 
-.reachout{
+.reachout {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
 }
 
-.feedback{
+.feedback {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -217,20 +266,20 @@ footer {
     padding: 0px 50px;
 }
 
-.feedback input{
+.feedback input {
     padding: 10px;
     margin: 10px;
     border: 1px solid grey;
 }
 
-.feedback textarea{
+.feedback textarea {
     padding: 10px;
     margin: 10px;
     text-align: center;
     align-items: center;
 }
 
-.feedback button{
+.feedback button {
     background-color: black;
     color: white;
     width: 80px;
@@ -242,16 +291,16 @@ footer {
     font-size: small;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
     border-bottom: 2px solid black;
-    padding: 10px;    
+    padding: 10px;
 }
 
-.list{
+.list {
     display: flex;
     width: 100%;
     align-items: center;
@@ -260,5 +309,72 @@ footer {
     font-size: 1.2rem;
     padding: 10px;
     margin: 10px;
-    margin-bottom: 100px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+table {
+    width: 350px;
+
+}
+
+.img {
+    height: 200px;
+    width: 280px;
+    background-size: cover;
+}
+
+
+.food section {
+    border: 2px solid black;
+    width: 350px;
+    margin: 10px auto 15px auto;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px gray;
+    max-height:  400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.food h3{
+     font-family: 'Lora', serif;
+     font-size: 25px;
+}
+
+.food .block{
+    display: flex;
+    padding: 10px;
+}
+
+.food section:hover {
+    transform: translateY(-10px);
+    transition-duration: 300ms;
+    /* box-shadow: 5px 5px 8px; */
+
+}
+
+.food h3 {
+    text-align: center;
+}
+
+.food table {
+    border-collapse: collapse;
+    margin: auto;
+    border: none;
+    padding: 10px;
+    width: 300px;
+}
+
+.img {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+::-webkit-scrollbar{
+    color: white;
 }
