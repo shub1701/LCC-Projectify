@@ -35,6 +35,7 @@
       <div class="empty-space"></div>
     </div>
   </header>
+
   <main>
     <section id="home">
       <div class="title heading">Best Sellers & Must try ! </div>
@@ -232,23 +233,29 @@
             <span class="prev">
               <ion-icon name="chevron-back-outline"></ion-icon>
             </span>
-            <p>Choose next</p>
             <span class="next">
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </span>
           </div>
         </div>
     </section>
+
     <section id="menu">
-      <div class="title heading">Menu </div>
+      <div class="title heading">
+        <h1>
+          Menu
+        </h1>
+      </div>
       <div class="menu">
         <div class="list">
-          <a href="#appetizers"><b>Appetizers</b></a>
-          <a href="#entrees"><b>Entrees</b></a>
-          <a href="#desserts"><b>Desserts</b></a>
-          <a href="#drinks"><b>Drinks</b></a>
+          <a href="#appetizers" onclick="openTab(event, 'appetizers')" class='active'><b>Appetizers</b></a>
+          <a href="#entrees" onclick="openTab(event, 'entrees')"><b>Entrees</b></a>
+          <a href="#desserts" onclick="openTab(event, 'desserts')"><b>Desserts</b></a>
+          <a href="#drinks" onclick="openTab(event, 'drinks')"><b>Drinks</b></a>
         </div>
-        <div id="appetizers" class="food">
+
+
+        <div id="appetizers" class="food active">
           <div class="block">
 
             <section>
@@ -423,7 +430,9 @@
                 </tr>
               </table>
             </section>
+          </div>
 
+          <div class="block">
             <section>
               <h3>Soups</h3>
               <div class="img"><img src="assets/soups.png" alt="soups" height="200px" width="280px"></div>
@@ -475,9 +484,6 @@
                 </tr>
               </table>
             </section>
-          </div>
-
-          <div class="block">
 
             <section>
               <h3>Samosa & Vadas &More</h3>
@@ -597,7 +603,9 @@
                 </tr>
               </table>
             </section>
+          </div>
 
+          <div class="block">
             <section>
               <h3>Pav Bhaji</h3>
               <div class="img"><img src="assets/pavbhaji.png" alt="Pav bhaji" height="200px" width="280px"></div>
@@ -707,642 +715,645 @@
                 </tr>
               </table>
             </section>
+
           </div>
         </div>
 
-        <div id="entrees" class="food">
-          <div class="block">
+          <div id="entrees" class="food">
+            <div class="block">
 
-            <section>
-              <h3>Chinese Maincourse</h3>
-              <div class="img"><img src="assets/chinese.webp" alt="img of chinese main couse"height="200px" width="280px"></div>
-              <table border="1">
-                <tr>
-                  <td>1</td>
-                  <td>Veg Fried Rice/Noodles</td>
-                  <td>&#8377;60</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Shanghai Fried Rice/Noodles</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Szechaun Fried Rice/Noodles</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Singapore Fried Rice/Noodles</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Szechaun Paneer Fried Rice/Noodles</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Szechaun Mushroom Fried Rice/Noodles</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Triple Szechaun Fried Rice</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Chef Spl Fried Rice(with sauce)</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Veg crispy Noodles</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Gobi Noodles Mix</td>
-                  <td>&#8377;80</td>
-                </tr>
-              </table>
-            </section>
+              <section>
+                <h3>Chinese Maincourse</h3>
+                <div class="img"><img src="assets/chinese.webp" alt="img of chinese main couse" height="200px"
+                    width="280px"></div>
+                <table border="1">
+                  <tr>
+                    <td>1</td>
+                    <td>Veg Fried Rice/Noodles</td>
+                    <td>&#8377;60</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Shanghai Fried Rice/Noodles</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Szechaun Fried Rice/Noodles</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Singapore Fried Rice/Noodles</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Szechaun Paneer Fried Rice/Noodles</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Szechaun Mushroom Fried Rice/Noodles</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Triple Szechaun Fried Rice</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Chef Spl Fried Rice(with sauce)</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Veg crispy Noodles</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Gobi Noodles Mix</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                </table>
+              </section>
 
-            <section>
-              <h3>Chinese Starters</h3>
-              <div class="img"><img src="assets/starters.webp" alt=""height="200px" width="280px"></div>
-              <table border="1">
-                <tr>
-                  <td>1</td>
-                  <td>Gobi Manchurian</td>
-                  <td>&#8377;60</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Gobi Chilli</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Gobi 65</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Baby Corn Manchurian</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Baby Corn chilli</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Baby Corn 65</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Baby Corn golden Fry</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Mushroom Manchurian</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Mushroom Chilli</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Mushroom 65</td>
-                  <td>&#8377;70</td>
-                </tr>
+              <section>
+                <h3>Chinese Starters</h3>
+                <div class="img"><img src="assets/starters.webp" alt="" height="200px" width="280px"></div>
+                <table border="1">
+                  <tr>
+                    <td>1</td>
+                    <td>Gobi Manchurian</td>
+                    <td>&#8377;60</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Gobi Chilli</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Gobi 65</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Baby Corn Manchurian</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Baby Corn chilli</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Baby Corn 65</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Baby Corn golden Fry</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Mushroom Manchurian</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Mushroom Chilli</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Mushroom 65</td>
+                    <td>&#8377;70</td>
+                  </tr>
 
-                <tr>
-                  <td>11</td>
-                  <td>Paneer Manchurian</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Paneer Chilli</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>Paneer 65</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>Paneer Majestic</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>15</td>
-                  <td>Paneer Satay</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>16</td>
-                  <td>Crispy Veg</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>17</td>
-                  <td>Hot Garlic Gobi/Mushroom/Paneer</td>
-                  <td>&#8377;70/&#8377;80/&#8377;90</td>
-                </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Paneer Manchurian</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Paneer Chilli</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>Paneer 65</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>Paneer Majestic</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>Paneer Satay</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>Crispy Veg</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>Hot Garlic Gobi/Mushroom/Paneer</td>
+                    <td>&#8377;70/&#8377;80/&#8377;90</td>
+                  </tr>
 
-                <tr>
-                  <td>18</td>
-                  <td>Honey Chilli Pepper Gobi/Mushroom/Paneer</td>
-                  <td>&#8377;70/&#8377;80/&#8377;90</td>
-                </tr>
-                <tr>
-                  <td>19</td>
-                  <td>Shanghai Mushroom/Paneer</td>
-                  <td>&#8377;80/&#8377;90</td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>Mongolian Gobi/Mushroom/Paneer</td>
-                  <td>&#8377;70/&#8377;80/&#8377;90</td>
-                </tr>
-              </table>
-            </section>
+                  <tr>
+                    <td>18</td>
+                    <td>Honey Chilli Pepper Gobi/Mushroom/Paneer</td>
+                    <td>&#8377;70/&#8377;80/&#8377;90</td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>Shanghai Mushroom/Paneer</td>
+                    <td>&#8377;80/&#8377;90</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>Mongolian Gobi/Mushroom/Paneer</td>
+                    <td>&#8377;70/&#8377;80/&#8377;90</td>
+                  </tr>
+                </table>
+              </section>
 
-            <section>
-              <h3>Combo</h3>
-              <div class="img"><img src="assets/combo.webp" alt=""height="200px" width="280px"></div>
-              <table border="1">
-                <tr>
-                  <td>1</td>
-                  <td>French Fries + Veg Fried Rice + Orea Milkshake</td>
-                  <td>&#8377;100</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Soup + French Fries + Szechuan Fried Rice + Green Apple Mojito</td>
-                  <td>&#8377;150</td>
-                </tr>
-              </table>
-            </section>
+              <section>
+                <h3>Combo</h3>
+                <div class="img"><img src="assets/combo.webp" alt="" height="200px" width="280px"></div>
+                <table border="1">
+                  <tr>
+                    <td>1</td>
+                    <td>French Fries + Veg Fried Rice + Orea Milkshake</td>
+                    <td>&#8377;100</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Soup + French Fries + Szechuan Fried Rice + Green Apple Mojito</td>
+                    <td>&#8377;150</td>
+                  </tr>
+                </table>
+              </section>
+            </div>
           </div>
-        </div>
 
-        <div id="desserts" class="food">
-        <div class="block">
+          <div id="desserts" class="food">
+            <div class="block">
 
-          <section>
-            <h3>Ice-Cream Special</h3>
-            <div class="img"><img src="assets/ice cream special png2.png" alt=""height="200px" width="280px"></div>
-            <table border="1">
-              <tr>
-                <td>1</td>
-                <td>Fruit Salad</td>
-                <td>&#8377;60</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Dry Fruit Salad</td>
-                <td>&#8377;80</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                  <td>Falooda</td>
-                  <td>&#8377;90</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Royal Falooda</td>
-                  <td>&#8377;100</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Special Falooda</td>
-                  <td>&#8377;120</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Gad Bad</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Scoop-Single</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Triple Scoop</td>
-                  <td>&#8377;80</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Chocolate Sandwich</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Fruit Sandwich</td>
-                  <td>&#8377;60</td>
-                </tr>
-              </table>
-            </section>
-        
-            <section>
-              <h3>Lassi</h3>
-              <div class="img"><img src="assets/lassi menu png.png" alt=""height="200px" width="280px"></div>
-              <table border="1">
-                <tr>
-                  <td>1</td>
-                  <td>Sweet Lassi</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Salt Lassi</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Strawberry Lassi</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Mango Lassi</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Pineapple Lassi</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Banana Lassi</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Butterscotch Lassi</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Dry Fruit Lassi</td>
-                  <td>&#8377;60</td>
-                </tr>
-              </table>
-            </section>
-            
-            <section>
-              <h3>Ice Cream Shakes</h3>
-              <div class="img"><img src="assets/ICE CREAM SHAKE PNG.png" alt=""height="200px" width="280px"></div>
-              <table border="1">
-                <tr>
-                  <td>1</td>
-                  <td>Black Current Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Red Velvet Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Cherry Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Blueberry Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Butterscotch Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Chocolate Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Snicker Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Kitkat Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Mango Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Oreo Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>Rose Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Strawberry Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>Tutti Frooti Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>Vanilla Ice-cream Shake</td>
-                  <td>&#8377;70</td>
-                </tr>
-              </table>
-            </section>
+              <section>
+                <h3>Ice-Cream Special</h3>
+                <div class="img"><img src="assets/ice cream special png2.png" alt="" height="200px" width="280px"></div>
+                <table border="1">
+                  <tr>
+                    <td>1</td>
+                    <td>Fruit Salad</td>
+                    <td>&#8377;60</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Dry Fruit Salad</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Falooda</td>
+                    <td>&#8377;90</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Royal Falooda</td>
+                    <td>&#8377;100</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Special Falooda</td>
+                    <td>&#8377;120</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Gad Bad</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Scoop-Single</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Triple Scoop</td>
+                    <td>&#8377;80</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Chocolate Sandwich</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Fruit Sandwich</td>
+                    <td>&#8377;60</td>
+                  </tr>
+                </table>
+              </section>
+
+              <section>
+                <h3>Lassi</h3>
+                <div class="img"><img src="assets/lassi menu png.png" alt="" height="200px" width="280px"></div>
+                <table border="1">
+                  <tr>
+                    <td>1</td>
+                    <td>Sweet Lassi</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Salt Lassi</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Strawberry Lassi</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Mango Lassi</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Pineapple Lassi</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Banana Lassi</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Butterscotch Lassi</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Dry Fruit Lassi</td>
+                    <td>&#8377;60</td>
+                  </tr>
+                </table>
+              </section>
+
+              <section>
+                <h3>Ice Cream Shakes</h3>
+                <div class="img"><img src="assets/ICE CREAM SHAKE PNG.png" alt="" height="200px" width="280px"></div>
+                <table border="1">
+                  <tr>
+                    <td>1</td>
+                    <td>Black Current Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Red Velvet Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Cherry Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Blueberry Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Butterscotch Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Chocolate Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Snicker Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Kitkat Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Mango Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Oreo Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Rose Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Strawberry Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>Tutti Frooti Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>Vanilla Ice-cream Shake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                </table>
+              </section>
+            </div>
           </div>
-        </div>
-        
+
           <div id="drinks" class="food">
             <div class="block">
 
               <section>
                 <h3>Coffee & Tea & More(cold)</h3>
-                <div class="img"><img src="assets/cold coffee.png" alt=""height="200px" width="280px"></div>
+                <div class="img"><img src="assets/cold coffee.png" alt="" height="200px" width="280px"></div>
                 <table border="1">
                   <tr>
                     <td>1</td>
-                  <td>Cold Coffee</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Cold Chocolate</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Cold Badam</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Cold Boost</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Cold Horlicks</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Lemon Ice Tea</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Peach Ice Tea</td>
-                  <td>&#8377;40</td>
-                </tr>
-              </table>
-            </section>
-        
-            <section>
-              <h3>Coffee & Tea & More(hot)</h3>
-              <div class="img"><img src="assets/coffee and tea.png" alt=""height="200px" width="280px"></div>
-              <table border="1">
-                <tr>
-                  <td>1</td>
-                  <td>Tea</td>
-                  <td>&#8377;10</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Coffee</td>
-                  <td>&#8377;10</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Boost</td>
-                  <td>&#8377;20</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Horlicks</td>
-                  <td>&#8377;20</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Hot Badam</td>
-                  <td>&#8377;20</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Lemon Tea</td>
-                  <td>&#8377;15</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Black Tea</td>
-                  <td>&#8377;15</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Black Coffee</td>
-                  <td>&#8377;15</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Green Tea</td>
-                  <td>&#8377;20</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Lemon Tea Masala</td>
-                  <td>&#8377;20</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>Ginger Masala Tea</td>
-                  <td>&#8377;20</td>
-                </tr>
-              </table>
-            </section>
-        
-            <section>
-              <h3>Milkshakes</h3>
-              <div class="img"><img src="assets/milk shake.png" alt=""height="200px" width="280px"></div>
-              <table border="1">
-                <tr>
-                  <td>1</td>
-                  <td>Apple Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Chikoo Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Avocado Milkshake</td>
-                  <td>&#8377;60</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Banana Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Musk Melon Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Pomegranate Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Mango Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Papaya Milkshake</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Black Currant Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Butterscotch Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>Blueberry Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Badam Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>Anjeer Milkshake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>Dates Milkshake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>15</td>
-                  <td>Dry Fruit Milkshake</td>
-                  <td>&#8377;70</td>
-                </tr>
-                <tr>
-                  <td>16</td>
-                  <td>Apricot Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>17</td>
-                  <td>Sharjah Milkshake</td>
-                  <td>&#8377;60</td>
-                </tr>
-                <tr>
-                  <td>18</td>
-                  <td>Snicker Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>19</td>
-                  <td>Kitkat Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>Oreo Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>21</td>
-                  <td>Chocolate Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>22</td>
-                  <td>Tutti Frooti Milk Shake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>23</td>
-                  <td>Red Velvet Milkshake</td>
-                  <td>&#8377;60</td>
-                </tr>
-                <tr>
-                  <td>24</td>
-                  <td>Cherry Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>25</td>
-                  <td>Rose Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>26</td>
-                  <td>Strawberry Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>27</td>
-                  <td>Pista Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>28</td>
-                  <td>Vanilla Milkshake</td>
-                  <td>&#8377;50</td>
-                </tr>
-              </table>
-            </section>
-          </div>
+                    <td>Cold Coffee</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Cold Chocolate</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Cold Badam</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Cold Boost</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Cold Horlicks</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Lemon Ice Tea</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Peach Ice Tea</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                </table>
+              </section>
+
+              <section>
+                <h3>Coffee & Tea & More(hot)</h3>
+                <div class="img"><img src="assets/coffee and tea.png" alt="" height="200px" width="280px"></div>
+                <table border="1">
+                  <tr>
+                    <td>1</td>
+                    <td>Tea</td>
+                    <td>&#8377;10</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Coffee</td>
+                    <td>&#8377;10</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Boost</td>
+                    <td>&#8377;20</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Horlicks</td>
+                    <td>&#8377;20</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Hot Badam</td>
+                    <td>&#8377;20</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Lemon Tea</td>
+                    <td>&#8377;15</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Black Tea</td>
+                    <td>&#8377;15</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Black Coffee</td>
+                    <td>&#8377;15</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Green Tea</td>
+                    <td>&#8377;20</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Lemon Tea Masala</td>
+                    <td>&#8377;20</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Ginger Masala Tea</td>
+                    <td>&#8377;20</td>
+                  </tr>
+                </table>
+              </section>
+
+              <section>
+                <h3>Milkshakes</h3>
+                <div class="img"><img src="assets/milk shake.png" alt="" height="200px" width="280px"></div>
+                <table border="1">
+                  <tr>
+                    <td>1</td>
+                    <td>Apple Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Chikoo Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Avocado Milkshake</td>
+                    <td>&#8377;60</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Banana Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Musk Melon Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Pomegranate Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Mango Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Papaya Milkshake</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Black Currant Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Butterscotch Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Blueberry Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Badam Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>Anjeer Milkshake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>Dates Milkshake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>Dry Fruit Milkshake</td>
+                    <td>&#8377;70</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>Apricot Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>Sharjah Milkshake</td>
+                    <td>&#8377;60</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>Snicker Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>Kitkat Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>Oreo Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>Chocolate Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>Tutti Frooti Milk Shake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>Red Velvet Milkshake</td>
+                    <td>&#8377;60</td>
+                  </tr>
+                  <tr>
+                    <td>24</td>
+                    <td>Cherry Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
+                    <td>Rose Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>26</td>
+                    <td>Strawberry Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>Pista Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
+                    <td>Vanilla Milkshake</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                </table>
+              </section>
+            </div>
+
             <div class="block">
               <section>
-                
+
                 <h3>Juices</h3>
-                <div class="img"><img src="assets/juices.png" alt=""height="200px" width="280px"></div>
+                <div class="img"><img src="assets/juices.png" alt="" height="200px" width="280px"></div>
                 <table border="1">
                   <tr>
                     <td>1</td>
@@ -1359,182 +1370,186 @@
                     <td>Blue Lime</td>
                     <td>&#8377;30</td>
                   </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Honey Lime</td>
-                  <td>&#8377;30</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Carrot</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Grape</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Musk Melon</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Mosambi</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Orange</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Pineapple</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>Pomegranate</td>
-                  <td>&#8377;40</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Watermelon</td>
-                  <td>&#8377;40</td>
-                </tr>
-              </table>
-            </section>
-            
-            <section>
-              <h3>Sodas</h3>
-              <div class="img"><img src="assets/soda.png" alt=""height="200px" width="280px"></div>
-              <table border="1">
-                <tr>
-                  <td>1</td>
-                  <td>Lemon Soda(salted/sweet)</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Masala Soda</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Pepper Soda</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Green Apple Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Blackcurrant Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Blueberry Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Blue Lemonade Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Ginger Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Strawberry Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Chilli Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>Green Mint Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Virgin Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>Raspberry Mojito</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>Sprite Soda</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>15</td>
-                  <td>Coca Soda</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>16</td>
-                  <td>Grape Soda</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>117</td>
-                  <td>Watermelon Soda</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>18</td>
-                  <td>Cherry Soda</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>19</td>
-                  <td>Cranberry Soda</td>
-                  <td>&#8377;50</td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>Pina Colada</td>
-                  <td>&#8377;50</td>
-                </tr>
-              </table>
-            </section>
-          </div>
+                  <tr>
+                    <td>4</td>
+                    <td>Honey Lime</td>
+                    <td>&#8377;30</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Carrot</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Grape</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Musk Melon</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Mosambi</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Orange</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Pineapple</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Pomegranate</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Watermelon</td>
+                    <td>&#8377;40</td>
+                  </tr>
+                </table>
+              </section>
+
+              <section>
+                <h3>Sodas</h3>
+                <div class="img"><img src="assets/soda.png" alt="" height="200px" width="280px"></div>
+                <table border="1">
+                  <tr>
+                    <td>1</td>
+                    <td>Lemon Soda(salted/sweet)</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Masala Soda</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Pepper Soda</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Green Apple Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Blackcurrant Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Blueberry Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Blue Lemonade Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Ginger Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Strawberry Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Chilli Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Green Mint Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Virgin Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>Raspberry Mojito</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>Sprite Soda</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>Coca Soda</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>Grape Soda</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>117</td>
+                    <td>Watermelon Soda</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>Cherry Soda</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>Cranberry Soda</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>Pina Colada</td>
+                    <td>&#8377;50</td>
+                  </tr>
+                </table>
+              </section>
             </div>
+
           </div>
+
+        </div>
     </section>
+
     <div class="reachout">
       <section id="orders">
+        <div class="title heading">Orders</div>
         <div class="orders">
-          
+
         </div>
       </section>
-      <div class="empty-space"></div>
       <section id="contact">
+        <div class="title heading">Feedback & review</div>
         <div class="feedback">
           <div class="email">
             <ion-icon name="mail"></ion-icon>
             <label for="email">Email Address : </label>
-            <input type="email">
+            <input type="email" required placeholder="xxxxx@gmail.com">
           </div>
           <div class="phone">
             <ion-icon name="call"></ion-icon>
             <label for="phone">Phone number : </label>
-            <input type="tel">
+            <input type="tel" required placeholder="+91 00000 00000">
           </div>
           <div class="suggestion">
             <ion-icon name="chatbubbles"></ion-icon>
@@ -1546,6 +1561,7 @@
       </section>
     </div>
   </main>
+
   <footer>
     <div class="social-media-links">
       <span class="logo-fb"><a href="#fb.com"><img src="assets/facebook.png" alt="fb logo"></a></span>
@@ -1556,7 +1572,7 @@
       <span class="copy">
         &copy;
       </span>
-      Estd. <br> 20XX, Lara's.
+      Estd. <br> 20XX, <a href="#">Lara's.</a>
     </div>
     <div class="up">
       <a href="#"><ion-icon name="arrow-up-outline"></ion-icon></a>

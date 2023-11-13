@@ -32,3 +32,22 @@ prev.addEventListener('click', ()=>{
         ActiveSlides(i);
     }
 })
+
+
+function openTab (event, tabId) {
+    event.preventDefault();
+    
+    document.querySelectorAll('.menu .list a.active').forEach(link =>{
+        link.classList.remove('active');
+    })
+
+    event.currentTarget.classList.add('active');
+
+    document.querySelectorAll('.food').forEach(content =>{
+        content.classList.remove('active');
+    })  
+    
+    document.getElementById(tabId).classList.add('active');
+
+      
+} 
